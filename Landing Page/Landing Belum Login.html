@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemira IKM UI</title>
+
+    <!-- Fav Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+
+    <!-- Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Font Lato -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <!-- Font Roboto -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- Jquery pertama -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- popper kedua -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- sisanya bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- css eksternal -->
+    <link rel="stylesheet" href="landing.css">
+
+</head>
+<body>
+
+    <!-- initialize style -->
+    <script>
+        AOS.init();
+    </script>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-sm navbar-light amber shadow lighten-4 mb-4">
+
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="#">
+            <img src="images/Logo Pemira UI 2020.png" alt="#" id="logo">
+        </a>
+    
+        <!-- Collapse button -->
+        <button class="navbar-toggler first-button rounded border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20" aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation" style="background: #FFDB00; height: 37px; width: 37px;">
+        <div class="animated-icon1"><span></span><span></span><span></span></div>
+        </button>
+    
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent20">
+    
+        <!-- Links -->
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item" id="textnavitem">
+                <div class="kotak pullUpHome">
+                    <a class="nav-link" href="#" style="color: #FFDB00;">Home <span class="sr-only">(current)</span></a>
+                </div>
+            </li>
+            <li class="nav-item pullUp" id="textnavitem">
+                <div class="kotak pullUp">
+                    <a class="nav-link" href="#" id="navigationWord">E-Voting</a>
+                </div>
+            </li>
+            <li class="nav-item pullUp" id="textnavitem">
+                <div class="kotak pullUp">
+                    <a class="nav-link" href="#" id="navigationWord">Kandidat</a>
+                </div>
+            </li>
+            <li class="nav-item pullUp" id="textnavitem">
+                <div class="kotak pullUp">
+                    <a class="nav-link" href="#" id="navigationWord">Sign In</a>
+                </div>
+            </li>
+            <li class="nav-item pullUp" id="textnavitem">
+                <div class="">
+                    <a class="nav-link" href="#" id="navigationWordSignUp">Sign Up</a>
+                </div>
+            </li>
+        </ul>
+        <!-- Links -->
+    
+        </div>
+        <!-- Collapsible content -->
+  
+    </nav>
+
+    <div class="textUtama container d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000">
+        Selamat Datang,
+    </div>
+
+    <div class="container d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000">
+        <div class="garisUtama"></div>
+    </div>
+    
+    <div class="textTambahan container d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000">
+        Pemilihan Raya Ikatan Keluarga Mahasiswa Universitas Indonesia 2020 x Fakultas
+    </div>
+
+    <!-- <div class="tombolExplore container d-flex justify-content-center"> -->
+    <a class="tombolExplore container d-flex justify-content-center" href="#explore" style="text-decoration: none;" id="linkExplore" data-aos="fade-up" data-aos-duration="1000">Explore</a>
+
+    <div class="container bagianTulisanGambar" id="explore">
+        <div class="row">
+            <div class="d-flex col-lg-6">
+                <div class="container Tengahh" data-aos="fade-down" data-aos-duration="1000">
+                   <img src="images/Logo Pemira UI 2020.png" alt="#" id="gambarPemiraHome"> 
+                </div>
+            </div>
+            <div class="d-flex col-lg-6">
+                <div class="container contain_text" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="apaituPemira">
+                        Apa itu Pemira ?
+                    </div>
+                    <div class="penjelasanPemira">
+                        Sarana suksesi lembaga kemahasiswaan yang dilaksanakan dalam lingkungan 
+                        Universitas Indonesia untuk memilih Ketua dan Wakil Ketua BEM UI secara berpasangan, 
+                        Anggota MWA UI UM dan Anggota DPM UI yang bersifat perseorangan
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container d-flex justify-content-center">
+        <div class="garisKedua"></div>
+    </div>
+
+    <div class="pilihMakaramu container">
+        Pilih Makaramu untuk lihat calon kandidat !
+    </div>
+
+    <div class="container d-flex justify-content-center kotakMakara" style="align-items: center;" data-aos="fade-down">
+        <a href="#">
+            <div class="container d-flex justify-content-center">
+                <img src="images/Makara.png" class="gambarMakara" alt="Avatar">
+            </div>
+        </a>
+    </div>
+    
+    <!-- makara pertama -->
+    <div class="container">
+        <div class="row">
+            <div class="col mx-1 d-flex justify-content-center">
+                <div class="container d-flex justify-content-center kotakMakara" style="align-items: center;" data-aos="fade-down">
+                    <div class="container d-flex justify-content-center">
+                        <img src="images/FK.png" alt="Avatar" class="gambarMakara">
+                    </div>
+                </div>
+            </div>    
+            <div class="col mx-1">
+                <div data-aos="fade-down" class="container d-flex justify-content-center kotakMakara" style="align-items: center;">
+                    <div class="container d-flex justify-content-center">
+                        <img src="images/FKG.png" alt="Avatar" class="gambarMakara">
+                    </div>
+                </div>
+            </div>
+            <div class="col mx-1">
+                <div class="container d-flex justify-content-center kotakMakara" style="align-items: center;" data-aos="fade-down">
+                    <div class="container d-flex justify-content-center">
+                        <img src="images/FF.png" alt="Avatar" class="gambarMakara">
+                    </div>
+                </div>
+            </div>
+            <div class="col mx-1">
+                <div class="container d-flex justify-content-center kotakMakara" style="align-items: center;" data-aos="fade-down">
+                    <div class="container d-flex justify-content-center">
+                        <img src="images/FIK.png" alt="Avatar" class="gambarMakara">
+                    </div>
+                </div>
+            </div>
+            <div class="col mx-1">
+                <div class="container d-flex justify-content-center kotakMakara" style="align-items: center;" data-aos="fade-down">
+                    <div class="container d-flex justify-content-center">
+                        <img src="images/FKM.png" alt="Avatar" class="gambarMakara">
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+    <!-- makara kedua -->
+    <div class="container">
+        <div class="row">
+            <div class="col mx-1 d-flex justify-content-center">
+                <div class="container d-flex justify-content-center kotakMakara" style="align-items: center;" data-aos="zoom-in">
+                    <div class="container d-flex justify-content-center">
+                        <img src="images/FH.png" alt="Avatar" class="gambarMakara">
+                    </div>
+                </div>
+            </div>    
+            <div class="col mx-1">
+                <div class="container d-flex justify-content-center kotakMakara" style="align-items: center;" data-aos="zoom-in">
+                    <div class="container d-flex justify-content-center">
+                        <img src="images/FISIP.png" alt="Avatar" class="gambarMakara">
+                    </div>
+                </div>
+            </div>
+            <div class="col mx-1">
+                <div class="container d-flex justify-content-center kotakMakara" style="align-items: center;" data-aos="zoom-in">
+                    <div class="container d-flex justify-content-center">
+                        <img src="images/FPsi.png" alt="Avatar" class="gambarMakara">
+                    </div>
+                </div>
+            </div>
+            <div class="col mx-1">
+                <div class="container d-flex justify-content-center kotakMakara" style="align-items: center;" data-aos="zoom-in">
+                    <div class="container d-flex justify-content-center">
+                        <img src="images/FIB.png" alt="Avatar" class="gambarMakara">
+                    </div>
+                </div>
+            </div>
+            <div class="col mx-1">
+                <div class="container d-flex justify-content-center kotakMakara" style="align-items: center;" data-aos="zoom-in">
+                    <div class="container d-flex justify-content-center">
+                        <img src="images/FEB.png" alt="Avatar" class="gambarMakara">
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+    <!-- makara ketiga -->
+    <div class="container">
+        <div class="row">
+            <div class="col mx-1 d-flex justify-content-center">
+                <div class="container d-flex justify-content-center kotakMakara" style="align-items: center;" data-aos="fade-up">
+                    <div class="container d-flex justify-content-center">
+                        <img src="images/FIA.png" alt="Avatar" class="gambarMakara">
+                    </div>
+                </div>
+            </div>    
+            <div class="col mx-1">
+                <div class="container d-flex justify-content-center kotakMakara" style="align-items: center;" data-aos="fade-up">
+                    <div class="container d-flex justify-content-center">
+                        <img src="images/FT.png" alt="Avatar" class="gambarMakara">
+                    </div>
+                </div>
+            </div>
+            <div class="col mx-1">
+                <div class="container d-flex justify-content-center kotakMakara" style="align-items: center;" data-aos="fade-up">
+                    <div class="container d-flex justify-content-center">
+                        <img src="images/Fasilkom.png" alt="Avatar" class="gambarMakara">
+                    </div>
+                </div>
+            </div>
+            <div class="col mx-1">
+                <div class="container d-flex justify-content-center kotakMakara" style="align-items: center;" data-aos="fade-up">
+                    <div class="container d-flex justify-content-center">
+                        <img src="images/FMIPA.png" alt="Avatar" class="gambarMakara">
+                    </div>
+                </div>
+            </div>
+            <div class="col mx-1">
+                <div class="container d-flex justify-content-center kotakMakara" style="align-items: center;" data-aos="fade-up">
+                    <div class="container d-flex justify-content-center">
+                        <img src="images/Vokasi.png" alt="Avatar" class="gambarMakara">
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container d-flex tulisanCopyright">
+            Copyright © 2020 Pemira IKM UI.
+        </div>
+    </div>
+
+</body>
+<script>
+    $(document).ready(function () {
+
+        $('.first-button').on('click', function () {
+
+        $('.animated-icon1').toggleClass('open');
+        });
+    });
+</script>
+</html>
