@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemira IKM UI</title>
+
+    <!-- Fav Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../Landing Page/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../Landing Page/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../Landing Page/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../Landing Page/images/favicon/site.webmanifest">
+
+    <!-- Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Font Lato -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <!-- Font Roboto -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- Jquery pertama -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- popper kedua -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- sisanya bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- css eksternal -->
+    <link rel="stylesheet" href="navbar.css">
+
+</head>
+<body>
+
+    <!-- initialize style -->
+    <script>
+        AOS.init();
+    </script>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-sm navbar-light amber shadow lighten-4 mb-4">
+
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="#">
+            <img src="../Landing Page/images/Logo Pemira UI 2020.png" alt="#" id="logo">
+        </a>
+    
+        <!-- Collapse button -->
+        <button class="navbar-toggler first-button rounded border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20" aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation" style="background: #FFDB00; height: 37px; width: 37px;">
+        <div class="animated-icon1"><span></span><span></span><span></span></div>
+        </button>
+    
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent20">
+    
+        <!-- Links -->
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item" id="textnavitem">
+                <div class="kotak pullUpHome">
+                    <a class="nav-link" href="#" style="color: #FFDB00;">Home <span class="sr-only">(current)</span></a>
+                </div>
+            </li>
+            <li class="nav-item pullUp" id="textnavitem">
+                <div class="kotak pullUp">
+                    <a class="nav-link" href="#" id="navigationWord">E-Voting</a>
+                </div>
+            </li>
+            <li class="nav-item pullUp" id="textnavitem">
+                <div class="kotak pullUp">
+                    <a class="nav-link" href="#" id="navigationWord">Kandidat</a>
+                </div>
+            </li>
+            <li class="nav-item pullUp" id="textnavitem">
+                <div class="kotak pullUp">
+                    <a class="nav-link" href="#" id="navigationWord">Sign In</a>
+                </div>
+            </li>
+            <li class="nav-item pullUp" id="textnavitem">
+                <div class="">
+                    <a class="nav-link" href="#" id="navigationWordSignUp">Sign Up</a>
+                </div>
+            </li>
+        </ul>
+        <!-- Links -->
+    
+        </div>
+        <!-- Collapsible content -->
+  
+    </nav>
+
+    <!-- Isi Tampilan Disini -->
+
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container d-flex tulisanCopyright">
+            Copyright © 2020 Pemira IKM UI.
+        </div>
+    </div>
+
+</body>
+<script>
+    $(document).ready(function () {
+
+        $('.first-button').on('click', function () {
+
+        $('.animated-icon1').toggleClass('open');
+        });
+    });
+</script>
+</html>
