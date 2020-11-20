@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap" rel="stylesheet">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+
+    <style>
+            .container-fluid{
+                padding: 10px 30px;
+            }
+            .img-responsive.logo{
+                float: right;
+                width: 180px;
+            }
+            .container{
+                padding: 55px 0 0 120px;
+                margin: auto;
+                font-family: 'Lato', sans-serif;
+            }
+            .judul{
+                color: black;
+                font-weight: bold;
+                font-size: 40px;
+            }
+            .note{
+                padding: 5px;
+                font-size: 14px;
+                color: black;
+                font-weight: 400;
+            }
+            .note-2{
+                font-size: 12px;
+                margin-left: 17px;
+                margin-top: 15px;
+            }
+            a.noteLink{
+                color: #6A6A6A;
+                text-decoration: underline;
+                text-decoration-color: #6A6A6A;
+            }
+            .bg{
+                background-color: #FFDB00;
+                border-radius: 70px;
+                box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                padding : 2px;
+            }
+            img.bg{
+                width: 53px;
+            }
+            .subhead{
+                font-size: 16px;
+                font-weight: 400;
+                opacity: 0.75;
+            }
+            .data{
+                color: #222222;
+                padding: 0 0 0 40px;
+            }
+            .dataUser{
+                font-weight: 600;
+            }
+            .icon{
+                margin-top: 10px;
+                height: auto;
+            }
+            .b{
+                padding: 10px 0;
+            }
+            .jarak{
+                line-height: 2;
+            }
+            .btn{
+                float: left;
+                background-color: #FFDB00;
+                font-size: 15px;
+                border-radius: 12px;
+                padding: 10px 20px;
+                margin-top: 0;
+                margin-left: 110px;
+            }
+            .col-kanan{
+                padding: 45px 35px;
+            }
+            .right {
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+            }
+            .text{
+                padding: 10px 5px;
+            }
+            .awal{
+                padding: 15px 0 0 35px;
+            }
+            i.arrow{
+                width: 70px;
+            }
+            #content-mobile{
+                display: none;
+            }
+
+            @media screen and (max-width: 1198px){
+                .awal{
+                    padding: 15px 0 0 30px;
+                }
+                h1.judul{
+                    font-size: 38px;
+                }
+                .container{
+                    padding: 65px 0 0 90px;
+                }
+                .forCard{
+                    width: 800px;
+                }
+                .card{
+                    width: 800px;
+                    height: 400px;
+                }
+                .btn{
+                    padding: 8px 17px;
+                }
+                .col-btn{
+                    padding: 0 0 0 75px;
+                }
+            }
+
+            @media screen and (max-width: 1040px){
+                .container{
+                    padding: 60px 0 0 90px;
+                }
+                .col-kanan{
+                    padding: 45px 0 45px 45px;
+                }
+                .btn{
+                    margin-left: 60px;
+                }
+                .col-btn{
+                    padding: 0 0 0 25px;
+                }
+                .card{
+                    width: 700px;
+                }
+            }
+
+            @media screen and (max-width: 995px){
+                img.bg{
+                    width: 48px;
+                }
+                .col-kanan{
+                    padding: 35px 0 65px 63px;
+                }
+                .card-body{
+                    padding: 0 30px;
+                }
+                .note-2{
+                    margin-top: 6px;
+                }
+                .awal{
+                    padding: 40px 0 0 35px;
+                }
+                .btn{
+                    margin-left: 70px;
+                    padding: 8px 18px;
+                    font-size: 13.5px;
+                }
+            }
+
+            @media screen and (max-width: 990px){
+                .btn{
+                    margin-left: 40px;
+                    padding: 7px 16px;
+                }
+                .col-kanan{
+                    padding: 50px 0 65px 63px;
+                }
+                .note-2{
+                    margin-left: 10px;
+                    margin-top: 8px;
+                }
+                h1.judul{
+                    font-size: 40px;
+                }
+                .awal{
+                    padding: 38px 0 0 30px;
+                }
+                .container{
+                    padding: 70px 0 0 0;
+                    margin-left: 120px;
+                }
+                .img-responsive{
+                    width: 170px;
+                }
+                .subhead{
+                    font-size: 15px;
+                }
+                .data{
+                    font-size: 15px;
+                    width: 160px;
+                }
+                .icon{
+                    margin-top: 8.5px;
+                }
+                .card{
+                    width: 720px;
+                }
+                .col-btn{
+                    padding: 0 0 0 155px;
+                }
+            }
+
+            @media screen and (max-width: 902px){
+                .row-resp{
+                    width: 720px;
+                }
+                .forCenter{
+                    width: 560px;
+                }
+                .card{
+                    width: 600px;
+                }
+                .awal{
+                    padding: 20px 0 0 25px;
+                }
+            }
+
+            @media screen and (max-width: 885px){
+                .container{
+                    margin-left: 120px;
+                }
+            }
+
+            @media screen and (max-width: 860px){
+                .container{
+                    margin-left: 120px;
+                }
+            }
+
+            @media screen and (max-width: 855px){
+                .container{
+                    margin-left: 100px;
+                    padding: 70px 0 0 10px;
+                }
+            }
+
+            @media screen and (max-width: 835px){
+                .container{
+                    margin-left: 80px;
+                    padding: 70px 0 0 20px;
+                }
+            }
+
+            @media screen and (max-width: 815px){
+                .container{
+                    margin-left: 60px;
+                    padding: 70px 0 0 30px;
+                }
+            }
+
+            @media screen and (max-width: 813px){
+                .col-btn{
+                    padding: 0 0 0 75px;
+                }
+            }
+
+            @media screen and (max-width: 812px){
+                .row-resp{
+                    width: 690px;
+                }
+                .forCenter{
+                    width: 690px;
+                }
+            }
+
+            @media screen and (max-width: 795px){
+                .container{
+                    margin-left: 50px;
+                    padding: 70px 0 0 40px;
+                }
+            }
+
+            @media screen and (max-width: 785px){
+                .container{
+                    margin-left: 35px;
+                    padding: 70px 0 0 55px;
+                }
+            }
+
+            @media screen and (max-width: 782px){
+                .container{
+                    padding: 70px 0 0 50px;
+                }
+            }
+
+            @media screen and (max-width: 777px){
+                .container{
+                    padding: 70px 0 0 40px;
+                }
+                .row-resp{
+                    width: 600px;
+                }
+                .forCenter{
+                    width: 600px;
+                }
+                .col-btn{
+                    padding: 0 0 0 130px;
+                }
+            }
+
+            @media screen and (max-width: 770px){
+                .container{
+                    margin: auto;
+                    padding: 70px 0 0 70px;
+                }
+            }
+
+            @media screen and (max-width: 768px){
+                .awal{
+                    padding: 20px 0 0 15px;
+                }
+            }
+
+            @media screen and (max-width: 767.5px){
+                .img-responsive.logo{
+                    width: 170px;
+                }
+                .card{
+                    height: 530px;
+                }
+                .col-kanan{
+                    padding: 10px 0 0 14px;
+                }
+                .kanan-2{
+                    padding: 10px 0;
+                }
+                .btn{
+                    margin-left: 85px;
+                    padding: 7px 15px;
+                    font-size: 14px;
+                }
+                .awal{
+                    padding: 15px 0 0 28px;
+                }
+                .col-sm-5{
+                    width: 10px;
+                }
+                .container{
+                    padding: 80px 0 0 70px;
+                    margin-left: 45px;
+                }
+                .img-responsive{
+                    width: 160px;
+                }
+                h1.judul{
+                    font-size: 35px;
+                }
+                .note{
+                    font-size: 12px;
+                }
+                .subhead{
+                    font-size: 15px;
+                }
+                .col-md-10{
+                    padding: 0 25px;
+                }
+                img.bg{
+                    width: 45px;
+                }
+                .note-2{
+                    margin-left: 35px;
+                }
+                .col-Acc{
+                    padding: 0 0;
+                }
+                .col-btn{
+                    padding: 0 0;
+                    margin-left: -50px;
+                }
+                .card{
+                    width: 450px;
+                    margin-left: 0px;
+                }
+            }
+
+            @media screen and (max-width: 720px){
+                .container{
+                    margin-left: 40px;
+                }
+            }
+
+            @media screen and (max-width: 700px){
+                .container{
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding: 80px 0 0 80px;
+                }
+                .card{
+                    width: 450px;
+                }
+                .row-resp{
+                    width: 480px;
+                }
+                .forCenter{
+                    width: 550px;
+                }
+                .col-btn{
+                    padding: 0 0 0 10px;
+                    margin-left: -40px;
+                }
+                .awal{
+                    padding: 15px 0 0 25px;
+                }
+            }
+
+            @media screen and (max-width: 586px){
+                .container{
+                    margin: 0 0;
+                    padding: 80px 0 0 30px;
+                }
+            }
+            
+            @media screen and (max-width: 577px){
+                .img-responsive.logo{
+                    width: 150px;
+                }
+                .awal{
+                    padding: 15px 0 0 20px;
+                }
+                .card{
+                    width: 400px;
+                }
+                .forCard{
+                    width: 370px;
+                    padding: 0 0 0 40px;
+                    margin: auto;
+                }
+                h1.judul{
+                    text-align: center;
+                    font-size: 36px;
+                }
+                .container{
+                    padding: 98px 0 0 0;
+                }
+                .note{
+                    text-align: center;
+                }
+                .forCenter{
+                    padding: 0 0 0 100px;
+                }
+                .btn{
+                    margin-left: 35px;
+                    padding: 7px 14px;
+                    font-size: 13px;
+                }
+                .col-Acc{
+                    width: 540px;
+                }
+                .note-2{
+                    margin-left: 0px;
+                }
+                .col-kanan{
+                    padding: 0 0 0 11.7px;
+                }
+                .kanan-2{
+                    padding: 0 0;
+                }
+                .col-btn{
+                    padding: 0 0 0 55px;
+                }
+            }
+
+            @media screen and (max-width: 575.5px){
+                .btn{
+                    margin-top: -120px;
+                    padding: 6px 13px;
+                    font-size: 12.5px;
+                }
+                .note-2{
+                    margin-top: 70px;
+                    padding: 0 0 0 60px;
+                }
+                .forCenter{
+                    padding: 0 0 0 150px;
+                }
+                .col-kanan{
+                    padding: 0 0 0 15px;
+                }
+                .card{
+                    margin: auto;
+                    width: 400px;
+                    margin-left: 30px;
+                    height: 580px;
+                }
+                .awal{
+                    padding: 15px 0 0 10px;
+                }
+                .forCard{
+                    padding: 0 0 0 10px;
+                }
+                .col-btn{
+                    padding: 0 0;
+                    margin-left: -320px;
+                }
+                .icon{
+                    width: 2px;
+                }
+                .data{
+                    width: 250px;
+                    padding: 0 0 0 50px;
+                }
+            }
+
+            @media screen and (max-width: 540px){
+                .btn{
+                    padding: 6px 13px;
+                    font-size: 12.5px;
+                }
+                .note-2{
+                    margin-top: 65px;
+                    padding: 0 0 0 8px;
+                }
+                .forCenter{
+                    margin-top: 0;
+                    width: 420px;
+                    padding: 0 0 0 183px;
+                }
+                .forCard{
+                    margin-left: 0;
+                    margin: auto;
+                }
+                .row-resp{
+                    width: 420px;
+                    margin-left: 10px;
+                }
+                .col-btn{
+                    margin-left: -210px;
+                }
+            }
+
+            @media screen and (max-width: 502px){
+                .forCenter{
+                    margin-top: 0;
+                    padding: 0 0 0 150px;
+                }
+                .note-2{
+                    margin-top: 65px;
+                    padding: 0 0 0 20px;
+                }
+                .card{
+                    margin-left: 0;
+                }
+                .col-btn{
+                    margin-left: -230px;
+                }
+            }
+
+            @media screen and (max-width: 415px){
+                .row-resp{
+                    width: 380px;
+                }
+                .container-fluid{
+                    width: 380px;
+                    padding: 10px 0;
+                }
+                .card{
+                    width: 300px;
+                    margin-left: 40px;
+                    height: auto;
+                }
+                .container{
+                    padding: 85px 0 0 0;
+                    margin: auto;
+                    width: 400px;
+                }
+                .img-responsive.logo{
+                    width: 118px;
+                }
+                h1.judul{
+                    font-size: 29px;
+                }
+                .note{
+                    font-size: 10px;
+                }
+                .forCard{
+                    width: 270px;
+                    padding: 0 0;
+                    margin-left: 0;
+                }
+                img.bg{
+                    width: 33px;
+                }
+                .icon{
+                    width: 1.5px;
+                    margin-top: 12px;
+                }
+                .awal{
+                    padding: 13px 0 0 25px;
+                }
+                .subhead{
+                    font-size: 13.5px;
+                }
+                .data{
+                    padding: 0 0 0 40px;
+                    width: 250px;
+                }
+                .card-body{
+                    padding: 0 20px;
+                }
+                .col-md-6{
+                    padding: 0 0;
+                }
+                .kanan-2{
+                    padding: 0 0;
+                }
+                .forCenter{
+                    padding: 0 0 0 125px;
+                }
+                .note-2{
+                    padding: 0 0;
+                    margin-left: -3px;
+                }
+                .col-btn{
+                    padding: 0 0 0 0;
+                    margin-left: 20px;
+                }
+                .card-body{
+                    padding: 0 0;
+                }
+            }
+
+            @media screen and (max-width: 376px){
+                .data{
+                    padding: 0 0 0 45px;
+                }
+            }
+
+            @media screen and (max-width: 360px){
+                .container{
+                    padding: 85px 0 0 4px;
+                }
+                .btn{
+                    margin-top: -120px;
+                    padding: 6px 13px;
+                    font-size: 12.5px;
+                    margin-left: -40px;
+                }
+                .note-2{
+                    margin-top: 65px;
+                    padding: 0 0 0 25px;
+                }
+                .forCenter{
+                    padding: 0 0 0 97px;
+                }
+                .row-resp{
+                    width: 360px;
+                }
+                .card{
+                    margin-left: 35px;
+                }
+                .forCard{
+                    margin: 0 0 0 8px;
+                }
+                .container-fluid{
+                    width: 400px;
+                }
+                .awal{
+                    padding: 13px 0 0 26px;
+                }
+                .col-btn{
+                    margin-left: 115px;
+                }
+            }
+
+            @media screen and (max-width: 320px){
+                .container-fluid{
+                    padding: 10px 18px;
+                }
+                .container{
+                    padding: 85px 0 0 5px;
+                }
+                .forCenter{
+                    padding: 0 0 0 120px;
+                }
+                .note-2{
+                    padding: 0 0 0 4px;
+                }
+                .col-btn{
+                    margin-left: 95px;
+                }
+            }
+        </style>
+
+        <div class="container-fluid">
+            <div id="content-mobile">
+                <i class="fa fa-arrow-left fa-3x" aria-hidden="true"></i>
+            </div>
+            <img class="img-responsive logo" src="LogoPemira.png" alt="Logo Pemira UI 2020">
+        </div>
+        <div class="container">
+            <h1 class="judul">Cek Data</h1>
+            <p class="note">*pastikan data diri yang tertera benar, jika ada kesalahan silahkan <span><a href="#" class="noteLink">kesini</a></span></p> {# redirect ke login page #}
+            <div class="row row-resp">
+                <div class="col-md-10 forCard">
+                    <div class="card shadow-sm p-3 mb-3">
+                    <div class="card-body">
+                        <div class="row awal">
+                            <div class="col-md-6">
+                                <div class="row a">
+                                    <div class="col-sm-2 icon">
+                                        <img class="img-responsive bg" src="iconNama.png" alt="icon nama">
+                                    </div>
+                                    <div class="col-sm-10 data">
+                                        <p class="jarak">
+                                            <span class="subhead">Nama Lengkap</span><br><span class="dataUser">Jaiman Cawisono Gunarto</span> {# nama user #}
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row b">
+                                    <div class="col-sm-2 icon">
+                                        <img class="img-responsive bg" src="iconNPM.png" alt="icon NPM">
+                                    </div>
+                                    <div class="col-sm-10 data">
+                                        <p class="jarak">
+                                            <span class="subhead">NPM</span><br><span class="dataUser">1986019234</span> {# npm user #}
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row c">
+                                    <div class="col-sm-2 icon">
+                                        <img class="img-responsive bg" src="iconFakultas.png" alt="icon fakultas/jurusan">
+                                    </div>
+                                    <div class="col-sm-10 data">
+                                        <p class="jarak">
+                                            <span class="subhead">Fakultas</span><br><span class="dataUser">Ilmu Komputer</span> {# fakultas user #}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-kanan">
+                                <div class="row b">
+                                    <div class="col-sm-2 icon">
+                                        <img class="img-responsive bg" src="iconFakultas.png" alt="icon fakultas/jurusan">
+                                    </div>
+                                    <div class="col-sm-10 data">
+                                        <p class="jarak">
+                                            <span class="subhead">Jurusan</span><br><span class="dataUser">Sistem Informasi</span> {# jurusan user #}
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row kanan-2">
+                                    <div class="col-sm-2 icon">
+                                        <img class="img-responsive bg" src="iconEmail.png" alt="icon email">
+                                    </div>
+                                    <div class="col-sm-10 data">
+                                        <p class="jarak">
+                                            <span class="subhead">Email UI</span><br><span class="dataUser">jaiman@ui.ac.id</span> {# email ui user #}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row forCenter justify-content-md-center">
+                <div class="col-sm-5 col-Acc">
+                    <p class="note-2">Already have an account? <span><a href="#" class="noteLink">Login here</a></span></p> {# redirect ke login page #}
+                </div>
+                <div class="col-sm-2 kosong">
+                </div>
+                <div class="col-sm-5 col-btn">
+                    <a href="#" class="btn"><span class="text">Next </span><i class="fa fa-angle-double-right" aria-hidden="true"></i></a> {# redirect ke verifikasi email #}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
