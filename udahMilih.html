@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <style>
+            .d-flex{
+                margin-top: 160px;
+                font-family: 'Lato', sans-serif;
+            }
+            .rowJudul{
+                margin-top: 20px;
+            }
+            .judul{
+                margin: auto;
+                font-size: 3rem;
+                font-weight: bold;
+            }
+            .col1{
+                margin-right: 50px;
+                margin-left: 283px;
+            }
+            .col2{
+                padding: 15px 0 0 0;
+                font-size: 43px;
+            }
+            .col3{
+                margin-left: 50px;
+                padding: 20px 0 0 0;
+            }
+            img.bg{
+                width: 180px;
+                text-align: center;
+            }
+            img.bg2{
+                width: 260px;
+                text-align: center;
+            }
+            .btn{
+                background-color: #FFDB00;
+                font-size: 17px;
+                border-radius: 8px;
+                padding: 10px 30px;
+                font-family: 'Roboto', sans-serif;
+            }
+            .row-btn{
+                margin-left: 480px;
+                margin-top: 20px;
+            }
+
+            @media screen and (max-width: 1200px){
+                .col1{
+                    margin-left: 197px;
+                }
+                .row-btn{
+                    margin-left: 394px;
+                }
+            }
+
+            @media screen and (max-width: 990px){
+                .col1{
+                    margin-left: 75px;
+                }
+                .row-btn{
+                    margin-left: 272px;
+                }
+            }
+
+            @media screen and (max-width: 767.5px){
+                .col1{
+                    margin-left: 18px;
+                }
+                img.bg{
+                    width: 150px;
+                }
+                img.bg2{
+                    width: 230px;
+                }
+                .col3{
+                    padding: 13px 0 0 0;
+                }
+                .col2{
+                    font-size: 33px;
+                }
+                h1.judul{
+                    font-size: 2.5rem;
+                }
+                .btn{
+                    font-size: 13px;
+                }
+                .row-btn{
+                    margin-left: 185px;
+                }
+            }
+
+            @media screen and (max-width: 515px){
+                .col1{
+                    margin-left: 70px;
+                    margin-right: 25px;
+                }
+                img.bg{
+                    width: 120px;
+                }
+                img.bg2{
+                    width: 180px;
+                }
+                .col3{
+                    margin-left: 25px;
+                    padding: 12px 0 0 0;
+                }
+                .col2{
+                    padding: 10px 0 0 0;
+                }
+                h1.judul{
+                    font-size: 2rem;
+                }
+                .btn{
+                    padding: 10px 25px;
+                }
+                .row-btn{
+                    margin-left: 176px;
+                }
+            }
+
+            @media screen and (max-width: 500px){
+                .col1{
+                    margin-left: 63px;
+                }
+                .row-btn{
+                    margin-left: 170px;
+                }
+            }
+
+            @media screen and (max-width:415px){
+                img.bg{
+                    width: 100px;
+                }
+                img.bg2{
+                    width: 140px;
+                }
+                .col1{
+                    margin-top: 35px;
+                    margin-left: 50px;
+                }
+                .col2{
+                    font-size: 25px;
+                    margin-top: 35px;
+                }
+                .col3{
+                    margin-top: 33px;
+                }
+                h1.judul{
+                    font-size: 25px;
+                }
+                .rowJudul{
+                    margin-top: 10px;
+                }
+                .btn{
+                    padding: 8px 18px;
+                    font-size: 11px;
+                }
+                .row-btn{
+                    margin-left: 135px;
+                }
+                .container{
+                    margin-top: 50px;
+                }
+            }
+
+            @media screen and (max-width: 376px){
+                img.bg{
+                    width: 80px;
+                }
+                img.bg2{
+                    width: 120px;
+                }
+                .col1{
+                    margin-top: 38px;
+                    margin-left: 60px;
+                    margin-right: 20px;
+                }
+                .col2{
+                    font-size: 20px;
+                }
+                .col3{
+                    margin-left: 20px;
+                }
+                h1.judul{
+                    font-size: 22px;
+                }
+                .rowJudul{
+                    margin-top: 3px;
+                }
+                .btn{
+                    font-size: 9px;
+                }
+                .row-btn{
+                    margin-left: 122px;
+                    margin-top: 10px;
+                }
+                .container{
+                    margin-top: 20px;
+                }
+            }
+
+            @media screen and (max-width: 360px){
+                .col1{
+                    margin-left: 52px;
+                }
+                .row-btn{
+                    margin-left: 114px;
+                }
+            }
+
+            @media screen and (max-width: 320px){
+                img.bg{
+                    width: 70px;
+                }
+                img.bg2{
+                    width: 110px;
+                }
+                .col1{
+                    margin-left: 48px;
+                    margin-top: 39px;
+                    margin-right: 15px;
+                }
+                .col2{
+                    font-size: 17px;
+                }
+                .col3{
+                    margin-top: 32px;
+                    margin-left: 15px;
+                }
+                h1.judul{
+                    font-size: 20px;
+                }
+                .rowJudul{
+                    margin-top: 0;
+                }
+                .btn{
+                    padding: 6px 16px;
+                }
+                .row-btn{
+                    margin-left: 98px;
+                    margin-top: 5px;
+                }
+                .container{
+                    margin-top: 0;
+                }
+            }
+
+            @media screen and (max-width: 280px){
+                .col1{
+                    margin-left: 28px;
+                }
+                h1.judul{
+                    font-size: 18px;
+                }
+                .btn{
+                    font-size: 7.5px;
+                }
+                .row-btn{
+                    margin-top: 0;
+                    margin-left: 78.5px;
+                }
+            }
+
+        </style>
+        <div class="d-flex justify-content-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col1">
+                        <img class="img-responsive bg" src="LogoPemira.png" alt="Logo Pemira UI 2020">
+                    </div>
+                    <div class="col2">
+                        <b>x</b>
+                    </div>
+                    <div class="col3">
+                        <img class="img-responsive bg2" src="Logo.png" alt="Logo Pemira Fasilkom UI 2020">
+                    </div>
+                </div>
+                <br>
+                <div class="row rowJudul">
+                    <h1 class="judul">Terima Kasih Sudah Memilih</h1>
+                </div>
+                <br>
+                <div class="row row-btn">
+                    <div class="col-sm-5 col-btn">
+                        <a href="#" class="btn">Kembali</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
