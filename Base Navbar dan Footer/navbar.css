@@ -35,6 +35,15 @@ body {
     /* margin-top: 17px; */
     /* margin-left: 39px; */
 }
+
+@media screen and (max-width: 768px) {
+    #logo {
+        width: 100px;
+        /* margin-top: 17px; */
+        /* margin-left: 39px; */
+    }
+}
+
 .logoPemiraUI {
     float: left;
 }
@@ -215,6 +224,8 @@ div.pullUpHome a:hover:before
 }
 
 .tulisanCopyright {
+    bottom: 0;
+    background-color: #222222;
     padding-left: 57px;
     height: 93px;
     font-family: Roboto;
