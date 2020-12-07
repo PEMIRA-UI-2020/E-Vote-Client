@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+
+    <!-- Fav Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../Landing Page/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../Landing Page/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../Landing Page/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../Landing Page/images/favicon/site.webmanifest">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Font Lato -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <!-- Font Roboto -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- Jquery pertama -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- popper kedua -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- sisanya bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0"></script> -->
+
+    <!-- css eksternal -->
+    <link rel="stylesheet" href="FinalCounterResult.css">
+
+</head>
+<body>
+
+    <!-- initialize style -->
+    <script>
+        AOS.init();
+    </script>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-sm navbar-light amber shadow lighten-4 mb-4">
+
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="#">
+            <img src="Landing Page/images/Logo Pemira UI 2020.png" alt="#" id="logo">
+            <img src="Landing Page/images/Logo Pemira IKM Fasilkom UI.png" alt="#" id="logo" style="margin-left: 20px;">
+        </a>
+    
+        <!-- Collapse button -->
+        <button class="navbar-toggler first-button rounded border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20" aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation" style="background: #FFDB00; height: 37px; width: 37px; outline: none; box-shadow: none;">
+        <div class="animated-icon1"><span></span><span></span><span></span></div>
+        </button>
+    
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent20">
+    
+        <!-- Links -->
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item" id="textnavitem">
+                <div class="kotak pullUp">
+                    <a class="nav-link" href="#" id="navigationWord">Home</a>
+                </div>
+            </li>
+            <li class="nav-item pullUp" id="textnavitem">
+                <div class="kotak pullUpHome">
+                    <a class="nav-link" href="#" id="selected">Final Counter</a>
+                </div>
+            </li>
+            <li class="nav-item pullUp" id="textnavitem">
+                <div class="kotak pullUp">
+                    <a class="nav-link" href="#" id="navigationWord">Logout</a>
+                </div>
+            </li>
+            <!-- <li class="nav-item pullUp" id="textnavitem">
+                <div class="kotak pullUp d-flex align-items-center justify-content-center">
+                    <i class="fa fa-user-circle" aria-hidden="true" style="vertical-align: middle;"></i>
+                </div>
+            </li> -->
+        </ul>
+        <!-- Links -->
+    
+        </div>
+        <!-- Collapsible content -->
+  
+    </nav>
+
+    <!-- Isi Tampilan Disini -->
+    <div class="container d-flex justify-content-center mt-5" id="jdul">
+        Final Counter
+    </div>
+
+    <div class="container d-flex justify-content-center mt-4" id="jdul2">
+        PEMILIHAN BADAN EKSEKUTIF MAHASISWA FASILKOM UI
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card-vote">
+                    <div class="chart-container" style="position: relative; width:100%">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card-vote" style="min-height: 284px;">
+                    <div class="container d-flex justify-content-center mt-4" id="textAwal">
+                        Kandidat Terpilih
+                    </div>
+                    <div class="container d-flex justify-content-center mt-3" id="textAkhir">
+                        Calon 2
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container d-flex">
+        <div class="btn">
+            Finish
+        </div>
+    </div>
+    
+
+    <!-- <div class="container mt-5">
+        <div class="card-vote">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="Landing Page/images/Logo Pemira IKM Fasilkom UI.png" alt="#" id="logoFakultas">
+                </div>
+                <div class="col-md">
+                    <h1>PEMILIHAN ANGGOTA INDEPENDEN DPM FASILKOM UI <img src="Images/success.png" alt="#" id="logoSukses" class="ml-auto"></h1>
+                    <div class="container p-0 d-flex" id="tombolDetail">
+                        <div class="d-flex mr-auto align-middle">
+                            <p>Ditutup tanggal : 12 - 12 - 2020</p>
+                        </div>
+                        <div class="d-flex ml-auto">
+                            <a class="btn" id="btnSelesai">Start Count</a>
+                        </div>
+                    </div>
+                    <h5>Kandidat Terpilih : Calon 1</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card-vote">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="Landing Page/images/Logo Pemira IKM Fasilkom UI.png" alt="#" id="logoFakultas">
+                </div>
+                <div class="col-md">
+                    <h1>PEMILIHAN ANGGOTA INDEPENDEN DPM FASILKOM UI</h1>
+                    <div class="container p-0 d-flex" id="tombolDetail">
+                        <div class="d-flex mr-auto align-middle">
+                            <p>Ditutup tanggal : 12 - 12 - 2020</p>
+                        </div>
+                        <div class="d-flex ml-auto">
+                            <a href="#" class="btn" id="btnDetail">Start Count</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container-fluid d-flex tulisanCopyright">
+            Copyright © 2020 Pemira IKM UI x Pemira IKM Fasilkom UI
+        </div>
+    </div>
+
+</body>
+<script>
+    // import 'chartjs-plugin-datalabels'
+
+    $(document).ready(function () {
+
+        $('.first-button').on('click', function () {
+
+        $('.animated-icon1').toggleClass('open');
+        });
+
+        var ctx = document.getElementById('myChart');
+        Chart.Legend.prototype.afterFit = function() {
+            this.height = this.height + 15;
+        };
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Calon 1', 'Calon 2', 'Calon 3'], //passing nama calon disini
+                datasets: [{
+                    label: 'Jumlah Suara',
+                    data: [876, 1400, 943, 467], //passing nilai disini
+                    backgroundColor: [
+                        'rgba(238, 159, 25, 0.6)',
+                        'rgba(238, 159, 25, 0.6)',
+                        'rgba(238, 159, 25, 0.6)',
+                        'rgba(238, 159, 25, 0.6)',
+                        'rgba(238, 159, 25, 0.6)',
+                        'rgba(238, 159, 25, 0.6)',
+                    ],
+                    borderColor: [
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(255, 159, 64, 1)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true,
+                        },
+                        gridLines: {
+                            display: false
+                        }
+                    }],
+                    xAxes: [{
+                        barPercentage: 0.5,
+                        gridLines: {
+                            display: false
+                        }
+                    }]
+                },
+                // events: false,
+                // tooltips: {
+                //     enabled: false
+                // },
+                hover: {
+                    animationDuration: 1
+                },
+                animation: {
+                    duration: 5000,
+                    onComplete: function () {
+                        var chartInstance = this.chart,
+                            ctx = chartInstance.ctx;
+                        ctx.font = Chart.helpers.fontString(Chart.defaults.global.defaultFontSize, Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
+                        ctx.textAlign = 'center';
+                        ctx.textBaseline = 'bottom';
+
+                        this.data.datasets.forEach(function (dataset, i) {
+                            var meta = chartInstance.controller.getDatasetMeta(i);
+                            meta.data.forEach(function (bar, index) {
+                                var data = dataset.data[index];                            
+                                ctx.fillText(data, bar._model.x, bar._model.y - 5);
+                            });
+                        });
+                    }
+                }
+            }
+        });
+    });
+
+    // Chart.defaults.global.plugins.datalabels.anchor = 'end';
+    // Chart.defaults.global.plugins.datalabels.align = 'end';
+</script>
+</html>

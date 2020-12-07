@@ -1,0 +1,40 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Lato;
+    overflow-x: hidden;
+}
+
+.min {
+    min-height: 40vh;
+}
+
+.respon {
+    margin-top: 30vh;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 80px;
+    line-height: 80px;
+    text-align: center;
+
+    color: #EE9F19;
+}
+
+.pagenotfound {
+    margin-top: 30px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+
+    color:#222222;
+}
+
+.bawah {
+    min-height: 30vh;
+}
